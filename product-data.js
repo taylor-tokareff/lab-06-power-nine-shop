@@ -8,7 +8,7 @@ export const powerNine = [
         color: 'Colorless',
         cmc: 0,
         edition: 'Alpha',
-        image: 'Img/mox-pearl.jpg',
+        image: '../Img/mox-pearl.jpg',
         price: 25000
     },
 
@@ -18,7 +18,7 @@ export const powerNine = [
         color: 'Colorless',
         cmc: 0,
         edition: 'Alpha',
-        image: 'Img/mox-ruby.jpg',
+        image: '../Img/mox-ruby.jpg',
         price: 30000
     },
 
@@ -28,7 +28,7 @@ export const powerNine = [
         color: 'Colorless',
         cmc: 0,
         edition: 'Alpha',
-        image: 'Img/mox-jet.jpg',
+        image: '../Img/mox-jet.jpg',
         price: 35000
     },
 
@@ -38,7 +38,7 @@ export const powerNine = [
         color: 'Colorless',
         cmc: 0,
         edition: 'Alpha',
-        image: 'Img/mox-emerald.jpg',
+        image: '../Img/mox-emerald.jpg',
         price: 20000
     },
 
@@ -48,7 +48,7 @@ export const powerNine = [
         color: 'Colorless',
         cmc: 0,
         edition: 'Alpha',
-        image: 'Img/black-lotus.jpg',
+        image: '../Img/black-lotus.jpg',
         price: 500000
     },
 
@@ -58,7 +58,7 @@ export const powerNine = [
         color: 'Colorless',
         cmc: 0,
         edition: 'Alpha',
-        image: 'Img/mox-sapphire.jpg',
+        image: '../Img/mox-sapphire.jpg',
         price: 40000
     },
 
@@ -68,7 +68,7 @@ export const powerNine = [
         color: 'Blue',
         cmc: 3,
         edition: 'Alpha',
-        image: 'Img/timetwister.jpg',
+        image: '../Img/timetwister.jpg',
         price: 20000
     },
 
@@ -78,7 +78,7 @@ export const powerNine = [
         color: 'Blue',
         cmc: 1,
         edition: 'Alpha',
-        image: 'Img/ancestral-recall.jpg',
+        image: '../Img/ancestral-recall.jpg',
         price: 100000
     },
 
@@ -88,7 +88,7 @@ export const powerNine = [
         color: 'Blue',
         cmc: 1,
         edition: 'Alpha',
-        image: 'Img/time-walk.jpg',
+        image: '../Img/time-walk.jpg',
         price: 125000
     },
 

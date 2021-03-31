@@ -45,7 +45,7 @@ export function createCardsLi(powerNine) {
 
     button.textContent = 'Add to cart';
 
-    li.append(name, type, color, cmc, edition, image, price);
+    li.append(name, type, color, cmc, edition, image, price, button);
     console.log(li)
     return li;
 
