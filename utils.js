@@ -1,3 +1,5 @@
+
+
 export function createCardsLi(powerNine) {
 
     const li = document.createElement('li');
@@ -50,4 +52,12 @@ export function createCardsLi(powerNine) {
     return li;
 
 
+}
+
+export function findByID(array, id) {
+    for (let item of array) {
+        if (item.id === id) {
+            return item;
+        }
+    }
 }

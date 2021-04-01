@@ -2,7 +2,7 @@
 
 export const powerNine = [
     {
-
+        id: 1,
         name: 'Mox Pearl',
         type: 'Artifact',
         color: 'Colorless',
@@ -13,6 +13,7 @@ export const powerNine = [
     },
 
     {
+        id: 2,
         name: 'Mox Ruby',
         type: 'Artifact',
         color: 'Colorless',
@@ -23,6 +24,7 @@ export const powerNine = [
     },
 
     {
+        id: 3,
         name: 'Mox Jet',
         type: 'Artifact',
         color: 'Colorless',
@@ -33,6 +35,7 @@ export const powerNine = [
     },
 
     {
+        id: 4,
         name: 'Mox Emerald',
         type: 'Artifact',
         color: 'Colorless',
@@ -43,6 +46,7 @@ export const powerNine = [
     },
 
     {
+        id: 5,
         name: 'Black Lotus',
         type: 'Artifact',
         color: 'Colorless',
@@ -53,6 +57,7 @@ export const powerNine = [
     },
 
     {
+        id: 6,
         name: 'Mox Sapphire',
         type: 'Artifact',
         color: 'Colorless',
@@ -63,6 +68,7 @@ export const powerNine = [
     },
 
     {
+        id: 7,
         name: 'Timetwister',
         type: 'Sorcery',
         color: 'Blue',
@@ -73,6 +79,7 @@ export const powerNine = [
     },
 
     {
+        id: 8,
         name: 'Ancestral Recall',
         type: 'Instant',
         color: 'Blue',
@@ -83,6 +90,7 @@ export const powerNine = [
     },
 
     {
+        id: 9,
         name: 'Time Walk',
         type: 'Sorcery',
         color: 'Blue',
@@ -91,17 +99,6 @@ export const powerNine = [
         image: '../Img/time-walk.jpg',
         price: 125000
     },
-
-
-
-
-
-
-
-
-
-
-
 
 
 ]
