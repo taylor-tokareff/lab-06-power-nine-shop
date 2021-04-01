@@ -1,3 +1,4 @@
+import { powerNine } from './product-data.js';
 
 
 export function createCardsLi(powerNine) {
@@ -48,7 +49,7 @@ export function createCardsLi(powerNine) {
     button.textContent = 'Add to cart';
 
     li.append(name, type, color, cmc, edition, image, price, button);
-    console.log(li)
+
     return li;
 
 
@@ -60,4 +61,20 @@ export function findByID(array, id) {
             return item;
         }
     }
+}
+
+export function calcItemTotal(price, quantity) {
+    return price * quantity;
+}
+
+export function calcOrderTotal(cart) {
+    let counter = 0;
+
+    for (let card of cart) {
+        const itemPrice = findByID(powerNine, card.id).price;
+        const cardTotal = calcItemTotal(itemPrice, card.quantity);
+        counter += cardTotal;
+    }
+    return counter;
+
 }

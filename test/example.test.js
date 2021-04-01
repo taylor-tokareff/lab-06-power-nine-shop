@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { findByID } from "../utils.js";
+import { calcItemTotal, findByID, calcOrderTotal } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -45,4 +45,33 @@ test('take in an array and an id and return an item by that id', (expect) => {
     const actual = findByID(array, id);
 
     expect.deepEqual(actual, expected);
+});
+
+
+test('calculate items sub-total', (expect) => {
+
+    const expected = 420;
+
+    const actual = calcItemTotal(42, 10);
+
+    expect.equal(actual, expected);
+
+});
+
+test('add together all subtotals', (expect) => {
+    const testCartItems = [{
+        id: 1,
+        quantity: 3
+    },
+
+    {
+        id: 2,
+        quantity: 1
+    },
+    ];
+
+    const expected = 105000;
+    const actual = calcOrderTotal(testCartItems);
+
+    expect.equal(actual, expected);
 });

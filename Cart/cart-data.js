@@ -1,25 +1,25 @@
 export const cart = [
     {
         id: 1,
-        quanity: 3
+        quantity: 3
     },
 
     {
         id: 2,
-        quanity: 7
+        quantity: 7
     },
 
     {
         id: 3,
-        quanity: 4
+        quantity: 4
     },
 
     {
         id: 4,
-        quanity: 3
+        quantity: 3
     },
 
 
 
 
-]
+];
