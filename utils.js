@@ -91,3 +91,13 @@ export function createCartRow(cartItem, card) {
     tr.append(tdName, tdQuantity, tdPrice);
     return tr;
 }
+
+export function createTotalRow(cartArray, powerNineArray) {
+    let sum = 0;
+    for (let cartItem of cartArray) {
+        const matchingpowerNine = findByID(powerNineArray, cartItem.id);
+        const lineItem = matchingpowerNine.price * cartItem.quantity;
+        sum = sum + lineItem;
+    }
+
+}

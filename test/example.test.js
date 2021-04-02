@@ -2,6 +2,7 @@
 // import { example } from '../example.js';
 
 import { calcItemTotal, findByID, calcOrderTotal, createCartRow } from '../utils.js';
+import { cart } from '../Cart/cart-data.js';
 
 const test = QUnit.test;
 
@@ -99,3 +100,13 @@ test('inject data to create rows', (expect) => {
 
     expect.equal(actual.outerHTML, expected);
 });
+
+test('adding all subtotals in cart'), (expect) => {
+
+    const expected = 160000;
+
+    const actual = calcOrderTotal(cart);
+
+    expect.equal(actual, expected);
+
+};
