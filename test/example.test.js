@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { calcItemTotal, findByID, calcOrderTotal } from '../utils.js';
+import { calcItemTotal, findByID, calcOrderTotal, createCartRow } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -74,4 +74,28 @@ test('add together all subtotals', (expect) => {
     const actual = calcOrderTotal(testCartItems);
 
     expect.equal(actual, expected);
+});
+
+test('inject data to create rows', (expect) => {
+    const expected = `<tr><td>Mox Pearl</td><td>3</td><td>25000</td></tr>`;
+    const actual = createCartRow(
+        {
+            id: 1,
+            quantity: 3
+        },
+        {
+            id: 1,
+            name: 'Mox Pearl',
+            type: 'Artifact',
+            color: 'Colorless',
+            cmc: 0,
+            edition: 'Alpha',
+            image: '../Img/mox-pearl.jpg',
+            price: 25000
+        }
+    );
+
+
+
+    expect.equal(actual.outerHTML, expected);
 });

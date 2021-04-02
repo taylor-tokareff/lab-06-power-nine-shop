@@ -78,3 +78,16 @@ export function calcOrderTotal(cart) {
     return counter;
 
 }
+
+export function createCartRow(cartItem, card) {
+    const tr = document.createElement('tr');
+    const tdName = document.createElement('td');
+    tdName.textContent = card.name;
+    const tdQuantity = document.createElement('td');
+    tdQuantity.textContent = cartItem.quantity;
+    const tdPrice = document.createElement('td');
+    tdPrice.textContent = card.price;
+
+    tr.append(tdName, tdQuantity, tdPrice);
+    return tr;
+}
