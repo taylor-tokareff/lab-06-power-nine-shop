@@ -67,17 +67,17 @@ export function calcItemTotal(price, quantity) {
     return price * quantity;
 }
 
-export function calcOrderTotal(cart) {
-    let counter = 0;
+// export function calcOrderTotal(cart, powerNine) {
+//     let counter = 0;
 
-    for (let card of cart) {
-        const itemPrice = findByID(powerNine, card.id).price;
-        const cardTotal = calcItemTotal(itemPrice, card.quantity);
-        counter += cardTotal;
-    }
-    return counter;
+//     for (let card of cart) {
+//         const itemPrice = findByID(powerNine, card.id).price;
+//         const cardTotal = calcItemTotal(itemPrice, card.quantity);
+//         counter += cardTotal;
+//     }
+//     return counter;
 
-}
+// }
 
 export function createCartRow(cartItem, card) {
     const tr = document.createElement('tr');
@@ -99,5 +99,7 @@ export function createTotalRow(cartArray, powerNineArray) {
         const lineItem = matchingpowerNine.price * cartItem.quantity;
         sum = sum + lineItem;
     }
+
+    return sum;
 
 }
