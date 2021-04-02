@@ -1,6 +1,9 @@
+import { getCart } from '../local-storage-utils.js';
 import { powerNine } from '../product-data.js';
-import { cart } from './cart-data.js';
+//import { cart } from './cart-data.js';
 import { createCartRow, createTotalRow, findByID, } from '../utils.js';
+
+const cart = getCart();
 
 
 const table = document.querySelector('.cart-table');
