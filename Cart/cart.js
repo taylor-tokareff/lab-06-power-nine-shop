@@ -21,7 +21,7 @@ const totalRow = createTotalRow(cart, powerNine);
 table.append(totalRow);
 
 const button = document.querySelector('#place-order');
-console.log(button);
+
 if (cart.length > 0) button.disabled = false;
 else button.disabled = true;
 
