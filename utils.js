@@ -1,4 +1,4 @@
-//import { powerNine } from './product-data.js';
+
 
 
 export function createCardsLi(powerNine) {
