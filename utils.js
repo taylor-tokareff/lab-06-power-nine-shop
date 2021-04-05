@@ -1,5 +1,9 @@
+
 import { powerNine } from './product-data.js';
 import { addItemToCart } from './local-storage-utils.js';
+
+//import { powerNine } from './product-data.js';
+
 
 
 export function createCardsLi(powerNine) {
