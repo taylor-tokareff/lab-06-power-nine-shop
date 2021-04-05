@@ -1,6 +1,12 @@
 
 
 
+import { addItemToCart } from './local-storage-utils.js';
+
+
+
+
+
 export function createCardsLi(powerNine) {
 
     const li = document.createElement('li');
@@ -47,6 +53,13 @@ export function createCardsLi(powerNine) {
     const button = document.createElement('button');
 
     button.textContent = 'Add to cart';
+
+    button.addEventListener('click', () => {
+        addItemToCart(powerNine.id);
+
+    });
+
+
 
     li.append(name, type, color, cmc, edition, image, price, button);
 
