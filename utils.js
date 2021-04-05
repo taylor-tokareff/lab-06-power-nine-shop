@@ -1,4 +1,4 @@
-import { powerNine } from './product-data.js';
+
 import { addItemToCart } from './local-storage-utils.js';
 
 
